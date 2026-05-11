@@ -1,0 +1,181 @@
+/* ═══════════════════════════════════════════════════════════
+   Mobile Responsive Overrides
+   Desktop is UNTOUCHED - all rules scoped to max-width: 768px
+   Uses !important to override inline React styles on mobile only
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+
+  /* ── Utility Bar ─────────────────────────────────────────── */
+  .m-util-bar {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 4px !important;
+    text-align: center !important;
+    padding: 6px 4% !important;
+  }
+
+  /* ── Masthead ────────────────────────────────────────────── */
+  .m-masthead {
+    padding: 14px 4% !important;
+  }
+
+  .m-masthead-inner {
+    gap: 12px !important;
+  }
+
+  .m-masthead-subtitle {
+    display: none !important;
+  }
+
+  .m-nav {
+    width: 100% !important;
+    gap: 8px 14px !important;
+    justify-content: flex-start !important;
+    padding-top: 12px !important;
+    border-top: 1px solid rgba(200,162,74,0.15) !important;
+  }
+
+  .m-nav a {
+    font-size: 14px !important;
+  }
+
+  .m-nav-cta {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 4px !important;
+    padding: 10px 16px !important;
+  }
+
+  /* ── Hero ─────────────────────────────────────────────────── */
+  .m-hero {
+    min-height: auto !important;
+  }
+
+  .m-hero-inner {
+    padding: 80px 5% 60px !important;
+  }
+
+  /* ── All two-column grids → stack single column ──────────── */
+  .m-grid-stack {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── Grid divider line (used in language programme) ──────── */
+  .m-grid-divider {
+    display: none !important;
+  }
+
+  /* ── Programme cards grid (keep 1 col on mobile) ─────────── */
+  .m-programme-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .m-programme-grid > div > div {
+    border-right: none !important;
+    border-bottom: 1px solid #E5E7EB !important;
+  }
+
+  /* ── Method steps grid ───────────────────────────────────── */
+  .m-method-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .m-method-grid > div > div {
+    border-right: none !important;
+  }
+
+  /* ── Faculty grid ────────────────────────────────────────── */
+  .m-faculty-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  .m-footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .m-footer-bottom {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 8px !important;
+  }
+
+  /* ── Section padding reduce on mobile ────────────────────── */
+  .m-section {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+  }
+
+  /* ── Flagship navy panel - add top padding when stacked ──── */
+  .m-flagship-panel {
+    padding: 32px 24px !important;
+  }
+
+  /* ── Stats row / meta row - wrap better ──────────────────── */
+  .m-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* ── Contact form grid ───────────────────────────────────── */
+  .m-form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── Compliance / Registrar table ────────────────────────── */
+  .m-compliance-table {
+    font-size: 13px !important;
+  }
+
+  .m-compliance-table td {
+    padding: 12px 10px !important;
+  }
+
+  /* ── Trust bar ───────────────────────────────────────────── */
+  .m-trust-bar {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center !important;
+  }
+
+  /* ── Decorative frames - hide on mobile ──────────────────── */
+  .m-frame {
+    display: none !important;
+  }
+
+  /* ── Bulletin / Article content ──────────────────────────── */
+  .m-article {
+    padding: 32px 20px !important;
+  }
+
+  /* ── Assessment form cards ───────────────────────────────── */
+  .m-assess-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* ── Buttons row - stack on mobile ───────────────────────── */
+  .m-btn-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .m-btn-row a {
+    text-align: center !important;
+  }
+
+  /* ── Programme detail buttons ─────────────────────────────── */
+  .m-programme-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .m-programme-buttons a {
+    text-align: center !important;
+    display: block !important;
+  }
+}

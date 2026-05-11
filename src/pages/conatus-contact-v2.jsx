@@ -71,7 +71,7 @@ function FadeIn({ children, delay = 0, style = {} }) {
 // ── Utility Bar ───────────────────────────────────────────────
 function UtilityBar() {
   return (
-    <div style={{
+    <div className="m-util-bar" style={{
       background: U.navyDeep, color: 'rgba(255,255,255,0.6)',
       padding: '8px 5%', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap',
       fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase',
@@ -92,24 +92,24 @@ function Masthead() {
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
-    <header style={{
+    <header className="m-masthead" style={{
       background: U.navy, color: U.ivory,
       padding: '20px 5%',
       borderBottom: `3px solid ${U.gold}`,
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+      <div className="m-masthead-inner" style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <Shield size={42} color={U.gold} />
           <div>
             <div style={{ fontFamily: Ufonts.display, fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 600, lineHeight: 1, color: U.ivory }}>
               Conatus Academy
             </div>
-            <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
+            <div className="m-masthead-subtitle" style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
               A School for Sales Professionals - Est. MMXXIV
             </div>
           </div>
         </div>
-        <nav style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
+        <nav className="m-nav" style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
           {['Programmes', 'CONAT Method', 'Bulletin', 'About', 'Contact'].map((l, i) => (
             <Link
               key={l.label}
@@ -125,7 +125,7 @@ function Masthead() {
               }}
             >{l.label}</Link>
           ))}
-          <Link to="/assessment" style={{
+          <Link className="m-nav-cta" to="/assessment" style={{
             fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
             color: U.navy, background: U.gold, padding: '10px 18px', textDecoration: 'none',
           }}>Free Assessment</Link>
@@ -259,7 +259,7 @@ function ContactForm() {
         <input type="text" value={form.company} onChange={handleChange('company')} onFocus={() => setFocusedField('company')} onBlur={() => setFocusedField(null)} style={inputStyle('company')} placeholder="Your company name" />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 20 }}>
+      <div className="m-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 20 }}>
         <div>
           <label style={labelStyle}>Role</label>
           <select value={form.role} onChange={handleChange('role')} onFocus={() => setFocusedField('role')} onBlur={() => setFocusedField(null)}
@@ -341,7 +341,7 @@ function ContactForm() {
 function MainContent() {
   return (
     <section style={{ padding: 'clamp(48px, 5vw, 80px) 5%', maxWidth: 1280, margin: '0 auto' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(280px, 0.8fr)', gap: 'clamp(32px, 4vw, 56px)', alignItems: 'start' }}>
+      <div className="m-grid-stack" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(280px, 0.8fr)', gap: 'clamp(32px, 4vw, 56px)', alignItems: 'start' }}>
         {/* Left - Form */}
         <FadeIn>
           <div style={{ border: `1px solid ${U.rule}`, padding: 'clamp(24px, 3vw, 40px)' }}>
@@ -509,7 +509,7 @@ function FAQ() {
 function Footer() {
   return (
     <footer style={{ background: U.navyDeep, color: U.ivory, padding: '48px 5% 28px' }}>
-      <div style={{
+      <div className="m-footer-grid" style={{
         maxWidth: 1280, margin: '0 auto',
         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 40,
         paddingBottom: 36, borderBottom: '1px solid rgba(200,162,74,0.2)',
@@ -554,7 +554,7 @@ function Footer() {
           {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
-      <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
+      <div className="m-footer-bottom" style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
         <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', color: 'rgba(255,255,255,0.35)' }}>
           2024-2026 CONATUS ACADEMY - ALL RIGHTS RESERVED
         </div>

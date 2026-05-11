@@ -150,7 +150,7 @@ function CrestSpinning({ size = 240 }) {
 // ── Utility Bar ───────────────────────────────────────────────
 function UtilityBar() {
   return (
-    <div style={{
+    <div className="m-util-bar" style={{
       background: U.navyDeep, color: 'rgba(255,255,255,0.6)',
       padding: '8px 5%', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap',
       fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase',
@@ -171,24 +171,24 @@ function Masthead() {
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
-    <header style={{
+    <header className="m-masthead" style={{
       background: U.navy, color: U.ivory,
       padding: '20px 5%',
       borderBottom: `3px solid ${U.gold}`,
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+      <div className="m-masthead-inner" style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
           <Shield size={42} color={U.gold} />
           <div>
             <div style={{ fontFamily: Ufonts.display, fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 600, lineHeight: 1, color: U.ivory }}>
               Conatus Academy
             </div>
-            <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
+            <div className="m-masthead-subtitle" style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
               A School for Sales Professionals - Est. MMXXIV
             </div>
           </div>
         </a>
-        <nav style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
+        <nav className="m-nav" style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
           {[
             { label: 'Programmes', to: '/programmes' },
             { label: 'CONAT Method', to: '/method' },
@@ -225,7 +225,7 @@ function Masthead() {
 function Footer() {
   return (
     <footer style={{ background: U.navyDeep, color: U.ivory, padding: '48px 5% 28px' }}>
-      <div style={{
+      <div className="m-footer-grid" style={{
         maxWidth: 1280, margin: '0 auto',
         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 40,
         paddingBottom: 36, borderBottom: '1px solid rgba(200,162,74,0.2)',
@@ -270,7 +270,7 @@ function Footer() {
           {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
-      <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
+      <div className="m-footer-bottom" style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
         <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', color: 'rgba(255,255,255,0.35)' }}>
           2024-2026 CONATUS ACADEMY - ALL RIGHTS RESERVED
         </div>
@@ -352,7 +352,7 @@ function AssessmentForm() {
       <h3 style={{ fontFamily: Ufonts.display, fontSize: 32, fontWeight: 500, lineHeight: 1.15, color: U.navy, margin: '0 0 24px', letterSpacing: '-0.01em' }}>
         Which describes your current position?
       </h3>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+      <div className="m-grid-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
         {['Account Executive', 'SDR / BDR', 'Sales Manager / Director', 'VP Sales / CRO', 'Customer Success', 'Other commercial role'].map(o => (
           <button key={o} type="button" onClick={() => setKV('role', o)}
             style={data.role === o ? chipOn : chipBase}>
@@ -412,7 +412,7 @@ function AssessmentForm() {
       <h3 style={{ fontFamily: Ufonts.display, fontSize: 32, fontWeight: 500, lineHeight: 1.15, color: U.navy, margin: '0 0 24px', letterSpacing: '-0.01em' }}>
         Where shall we send your invitation?
       </h3>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 22 }}>
+      <div className="m-grid-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 22 }}>
         <div>
           <label style={labelStyle}>Full name</label>
           <input style={inputStyle} placeholder="e.g. Magdalena Kowalska" value={data.name} onChange={e => setKV('name', e.target.value)} />
@@ -555,7 +555,7 @@ export default function ConatusAssessment() {
             })}
           </svg>
 
-          <div style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+          <div className="m-grid-stack" style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
             <FadeIn>
               <div>
                 <div style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.28em', textTransform: 'uppercase', color: U.gold, marginBottom: 22 }}>
@@ -571,7 +571,7 @@ export default function ConatusAssessment() {
                   A twenty-minute conversation with a member of our Faculty of Admissions. We assess your current standing, define a learning objective, and propose a programme of study - at no cost, with no obligation.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18, paddingTop: 24, borderTop: '1px solid rgba(200,162,74,0.2)' }}>
+                <div className="m-grid-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18, paddingTop: 24, borderTop: '1px solid rgba(200,162,74,0.2)' }}>
                   {[
                     ['Duration', '20 minutes'],
                     ['Format', 'Video or telephone'],
@@ -638,7 +638,7 @@ export default function ConatusAssessment() {
 
         {/* ── FORM SECTION ── */}
         <section id="form" style={{ padding: 'clamp(60px, 7vw, 88px) 5%', background: U.parchment, borderBottom: `1px solid ${U.rule}` }}>
-          <div style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: '320px 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="m-grid-stack" style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: '320px 1fr', gap: 56, alignItems: 'start' }}>
             {/* Sidebar - itinerary */}
             <aside style={{ position: 'sticky', top: 32 }}>
               <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: U.goldDeep, marginBottom: 16 }}>

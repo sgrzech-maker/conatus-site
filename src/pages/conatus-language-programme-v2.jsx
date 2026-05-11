@@ -140,7 +140,7 @@ function SectionHead({ kicker, title, sub, light }) {
 // ── Utility Bar ───────────────────────────────────────────────
 function UtilityBar() {
   return (
-    <div style={{
+    <div className="m-util-bar" style={{
       background: U.navyDeep, color: 'rgba(255,255,255,0.6)',
       padding: '8px 5%', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap',
       fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase',
@@ -161,24 +161,24 @@ function Masthead() {
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
-    <header style={{
+    <header className="m-masthead" style={{
       background: U.navy, color: U.ivory,
       padding: '20px 5%',
       borderBottom: `3px solid ${U.gold}`,
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+      <div className="m-masthead-inner" style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <Shield size={42} color={U.gold} />
           <div>
             <div style={{ fontFamily: Ufonts.display, fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 600, lineHeight: 1, color: U.ivory }}>
               Conatus Academy
             </div>
-            <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
+            <div className="m-masthead-subtitle" style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>
               A School for Sales Professionals - Est. MMXXIV
             </div>
           </div>
         </div>
-        <nav style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
+        <nav className="m-nav" style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
           {[
             { label: 'Programmes', to: '/programmes' },
             { label: 'CONAT Method', to: '/method' },
@@ -224,7 +224,7 @@ function Hero() {
       <div style={{ position: 'absolute', inset: 'clamp(16px, 2vw, 32px)', border: '1px solid rgba(200,162,74,0.18)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 'clamp(20px, 2.2vw, 36px)', border: '1px solid rgba(200,162,74,0.08)', pointerEvents: 'none' }} />
 
-      <div style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0, 1.5fr) 1px minmax(280px, 1fr)', gap: 'clamp(24px, 4vw, 56px)', alignItems: 'start' }}>
+      <div className="m-grid-stack" style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0, 1.5fr) 1px minmax(280px, 1fr)', gap: 'clamp(24px, 4vw, 56px)', alignItems: 'start' }}>
         <div>
           <FadeIn>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>
@@ -283,7 +283,7 @@ function Hero() {
           </FadeIn>
         </div>
 
-        <div style={{ background: 'rgba(200,162,74,0.2)', alignSelf: 'stretch' }} />
+        <div className="m-grid-divider" style={{ background: 'rgba(200,162,74,0.2)', alignSelf: 'stretch' }} />
 
         {/* Admissions card */}
         <aside>
@@ -427,7 +427,7 @@ function Programmes() {
 
       {/* Flagship */}
       <FadeIn>
-        <div style={{
+        <div className="m-grid-stack" style={{
           maxWidth: 1280, margin: '0 auto 28px',
           background: U.ivory,
           border: `1px solid ${U.navy}`,
@@ -750,7 +750,7 @@ function CourseComparison() {
 function Compliance() {
   return (
     <section style={{ padding: 'clamp(60px, 6vw, 96px) 5%', background: U.parchment, borderBottom: `1px solid ${U.rule}` }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.1fr)', gap: 'clamp(32px, 5vw, 80px)', alignItems: 'start' }}>
+      <div className="m-grid-stack" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.1fr)', gap: 'clamp(32px, 5vw, 80px)', alignItems: 'start' }}>
         <FadeIn>
           <div>
             <div style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.28em', textTransform: 'uppercase', color: U.goldDeep, marginBottom: 14 }}>
@@ -935,7 +935,7 @@ function CTA() {
 function Footer() {
   return (
     <footer style={{ background: U.navyDeep, color: U.ivory, padding: '48px 5% 28px' }}>
-      <div style={{
+      <div className="m-footer-grid" style={{
         maxWidth: 1280, margin: '0 auto',
         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 40,
         paddingBottom: 36, borderBottom: '1px solid rgba(200,162,74,0.2)',
@@ -979,7 +979,7 @@ function Footer() {
           {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.7)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
-      <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
+      <div className="m-footer-bottom" style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
         <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', color: 'rgba(255,255,255,0.4)' }}>
           2024-2026 CONATUS ACADEMY - ALL RIGHTS RESERVED
         </div>
