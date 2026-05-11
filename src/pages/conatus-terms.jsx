@@ -46,13 +46,13 @@ function Masthead() {
   return (
     <header style={{ background: U.navy, color: U.ivory, padding: '20px 5%', borderBottom: `3px solid ${U.gold}` }}>
       <div className="m-masthead-inner" style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
           <Shield size={42} color={U.gold} />
           <div>
             <div style={{ fontFamily: Ufonts.display, fontSize: 'clamp(22px, 2.5vw, 32px)', fontWeight: 600, lineHeight: 1, color: U.ivory }}>Conatus Academy</div>
             <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.28em', color: U.gold, textTransform: 'uppercase', marginTop: 4 }}>A School for Sales Professionals - Est. MMXXIV</div>
           </div>
-        </div>
+        </Link>
         <nav className="m-nav" style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
           {[
             { label: 'Programmes', to: '/programmes' },
