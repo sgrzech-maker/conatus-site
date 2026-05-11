@@ -374,17 +374,25 @@ function FourProgrammes() {
                 fontFamily: Ufonts.display, fontSize: 26, fontWeight: 500, lineHeight: 1.15,
                 color: U.navy, margin: '0 0 14px',
               }}>
-                {p.title}
+                {p.code === 'CONA-101' ? (
+                  <Link to="/programmes/business-language" style={{ color: 'inherit', textDecoration: 'none' }}>{p.title}</Link>
+                ) : p.title}
               </h3>
 
               <p style={{ fontFamily: Ufonts.serif, fontSize: 15, lineHeight: 1.7, color: U.inkSoft, margin: 0, flex: 1 }}>
                 {p.desc}
               </p>
 
-              <div style={{ marginTop: 20, paddingTop: 16, borderTop: `1px solid ${U.ruleSoft}` }}>
+              <div style={{ marginTop: 20, paddingTop: 16, borderTop: `1px solid ${U.ruleSoft}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: U.inkMute }}>
                   With {p.partner}
                 </span>
+                {p.code === 'CONA-101' && (
+                  <Link to="/programmes/business-language" style={{
+                    fontFamily: Ufonts.sans, fontSize: 11, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
+                    color: U.goldDeep, textDecoration: 'none',
+                  }}>View Programme →</Link>
+                )}
               </div>
             </div>
           </FadeIn>
@@ -547,6 +555,11 @@ function FlagshipFeature() {
                 <div style={{ fontFamily: Ufonts.serif, fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: 1.55 }}>
                   Institution-named invoice, course description, learning outcomes report and CEFR certificate provided.
                 </div>
+                <Link to="/programmes/business-language" style={{
+                  display: 'inline-block', marginTop: 20,
+                  fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
+                  color: U.navy, background: U.gold, padding: '12px 24px', textDecoration: 'none',
+                }}>View Full Programme</Link>
               </div>
             </div>
           </div>

@@ -441,13 +441,22 @@ function FlagshipCard() {
                 </div>
               ))}
 
-              <Link to="/assessment" style={{
-                display: 'inline-block', marginTop: 24,
-                fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
-                color: U.navy, background: U.gold, padding: '14px 28px', textDecoration: 'none',
-              }}>
-                Book Free Assessment
-              </Link>
+              <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 24 }}>
+                <Link to="/programmes/business-language" style={{
+                  display: 'inline-block',
+                  fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
+                  color: U.navy, background: U.gold, padding: '14px 28px', textDecoration: 'none',
+                }}>
+                  View Full Programme
+                </Link>
+                <Link to="/assessment" style={{
+                  display: 'inline-block',
+                  fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
+                  color: U.navy, border: `1.5px solid ${U.navy}`, padding: '14px 28px', textDecoration: 'none',
+                }}>
+                  Book Free Assessment
+                </Link>
+              </div>
             </div>
           </div>
         </FadeIn>
