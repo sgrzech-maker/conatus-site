@@ -542,7 +542,7 @@ function FlagshipFeature() {
                   fontFamily: Ufonts.display, fontSize: 'clamp(48px, 5vw, 80px)', fontWeight: 500, lineHeight: 0.94,
                   color: U.ivory,
                 }}>
-                  {'€'}4,995
+                  {'€'}3,995
                 </div>
                 <div style={{ fontFamily: Ufonts.serif, fontStyle: 'italic', fontSize: 15, color: 'rgba(255,255,255,0.7)', marginTop: 8 }}>
                   per participant - all-inclusive

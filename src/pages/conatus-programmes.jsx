@@ -275,7 +275,7 @@ const programmes = [
     status: 'Now Enrolling',
     statusColor: U.gold,
     partner: 'Accredited Partner',
-    price: '4,995',
+    price: '3,995',
     currency: 'EUR',
     duration: '12 weeks',
     hours: '50-55 contact hours',

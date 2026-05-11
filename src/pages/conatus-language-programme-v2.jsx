@@ -333,7 +333,7 @@ function Hero() {
                   Tuition
                 </div>
                 <div style={{ fontFamily: Ufonts.display, fontSize: 44, fontWeight: 600, lineHeight: 1, color: U.navy }}>
-                  {'€'}4,995
+                  {'€'}3,995
                 </div>
                 <div style={{ fontFamily: Ufonts.serif, fontStyle: 'italic', fontSize: 12, color: U.inkMute, marginTop: 4 }}>
                   per participant - all-inclusive
@@ -486,7 +486,7 @@ function Programmes() {
                 fontFamily: Ufonts.display, fontSize: 'clamp(48px, 5.5vw, 84px)', fontWeight: 500, lineHeight: 0.94,
                 letterSpacing: '-0.025em', color: U.ivory,
               }}>
-                {'€'}4,995
+                {'€'}3,995
               </div>
               <div style={{ fontFamily: Ufonts.serif, fontStyle: 'italic', fontSize: 15, color: 'rgba(255,255,255,0.7)', marginTop: 8 }}>
                 per participant - all-inclusive
