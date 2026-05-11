@@ -447,7 +447,7 @@ function Programmes() {
               Business Language for<br />Sales Professionals
             </h3>
             <p style={{ fontFamily: Ufonts.serif, fontSize: 16, lineHeight: 1.7, color: U.inkSoft, margin: '0 0 28px', maxWidth: 540 }}>
-              An intensive twelve-week programme combining business language with realistic enterprise sales scenarios - discovery calls, negotiations, executive presentations, stakeholder management - all in the target language. Delivered in partnership with Highline; certified to CEFR level on completion.
+              An intensive twelve-week programme combining business language with realistic enterprise sales scenarios - discovery calls, negotiations, executive presentations, stakeholder management - all in the target language. Certified to CEFR level on completion.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', borderTop: `1px solid ${U.rule}`, paddingTop: 18, gap: 16 }}>
@@ -834,7 +834,7 @@ function FAQ() {
         {[
           {
             q: 'Which languages are available?',
-            a: 'The programme currently offers French, Spanish, Italian and German. All instruction is delivered by qualified language professionals employed by our partner institution, Highline. Additional languages may be available on request for cohorts of three or more.',
+            a: 'The programme currently offers French, Spanish, Italian and German. All instruction is delivered by qualified language professionals employed by our partner institution. Additional languages may be available on request for cohorts of three or more.',
           },
           {
             q: 'What level do I need to start?',

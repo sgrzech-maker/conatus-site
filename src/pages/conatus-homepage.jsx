@@ -296,7 +296,7 @@ function TrustBar() {
         <span style={{ fontFamily: Ufonts.mono, fontSize: 10, color: U.inkMute, letterSpacing: '0.2em', textTransform: 'uppercase' }}>
           Courses delivered with our training partners
         </span>
-        {['Highline Languages', 'Altkom Akademia'].map((l, i) => (
+        {['Accredited Language School', 'Altkom Akademia'].map((l, i) => (
           <div key={i} style={{
             padding: '6px 16px', border: `1px solid ${U.rule}`,
             fontFamily: Ufonts.serif, fontSize: 14, fontWeight: 600, color: U.inkSoft,
@@ -314,7 +314,7 @@ function FourProgrammes() {
       code: 'CONA-101',
       title: 'Business Language for Sales Professionals',
       desc: 'Guaranteed one CEFR level improvement in 12 weeks. French, German, Spanish, Italian - with sales-specific vocabulary, live simulation calls, and real negotiation practice.',
-      partner: 'Highline',
+      partner: 'Accredited Partner',
       status: 'Now Enrolling',
       statusColor: U.gold,
     },
@@ -502,7 +502,7 @@ function FlagshipFeature() {
                 Business Language for<br />Sales Professionals
               </h3>
               <p style={{ fontFamily: Ufonts.serif, fontSize: 16, lineHeight: 1.7, color: U.inkSoft, margin: '0 0 28px', maxWidth: 540 }}>
-                An intensive twelve-week programme combining business language with realistic enterprise sales scenarios - discovery calls, negotiations, executive presentations, stakeholder management - all in the target language. Delivered in partnership with Highline; certified to CEFR level on completion.
+                An intensive twelve-week programme combining business language with realistic enterprise sales scenarios - discovery calls, negotiations, executive presentations, stakeholder management - all in the target language. Certified to CEFR level on completion.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))', borderTop: `1px solid ${U.rule}`, paddingTop: 18, gap: 16 }}>
@@ -564,6 +564,57 @@ function FlagshipFeature() {
             </div>
           </div>
         </FadeIn>
+      </div>
+    </section>
+  );
+}
+
+// ── Faculty ───────────────────────────────────────────────────
+function Faculty() {
+  const instructors = [
+    { name: 'Karolina Gajdos', photo: '/faculty/karolina-gajdos.jpg', initials: 'KG', language: 'Spanish', bio: 'Nearly two decades helping professionals communicate with confidence in international business environments. ICF-accredited specialist in professional language development.' },
+    { name: 'Monika Wajnberg', photo: '/faculty/monika-wajnberg.jpg', initials: 'MW', language: 'French', bio: 'Over 16 years working with French clients and companies. Deep understanding of cultural nuances critical in international business communication.' },
+    { name: 'Dorota Rafacz', photo: '/faculty/dorota-rafacz.jpg', initials: 'DR', language: 'German', bio: 'Business English and German specialist supporting learners from A1 to C2. Known for tailoring instruction to individual professional needs.' },
+    { name: 'Marcin Soltysiński', photo: '/faculty/marcin-soltysinski.jpg', initials: 'MS', language: 'German', bio: 'German and English specialist with three decades of experience in Cologne. Adapts instruction to diverse professional backgrounds and industries.' },
+    { name: 'Aleksandra Barysenka', photo: '/faculty/aleksandra-barysenka.jpg', initials: 'AB', language: 'Italian', bio: 'Italian Philology graduate specialising in business communication. Focused on building confidence and fluency in professional situations.' },
+  ];
+
+  return (
+    <section style={{ padding: 'clamp(60px, 6vw, 96px) 5%', background: U.ivory, borderBottom: `1px solid ${U.rule}` }}>
+      <SectionHead
+        kicker="The Faculty"
+        title="Named instructors. Verifiable credentials."
+        sub="Every programme is delivered by a named, qualified instructor employed by an established institution - not a freelancer marketplace."
+      />
+      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: 24 }}>
+        {instructors.map((f, i) => (
+          <FadeIn key={i} delay={i * 0.06}>
+            <article style={{ textAlign: 'center' }}>
+              <div style={{
+                width: 160, height: 200, margin: '0 auto 18px',
+                background: U.parchment, border: `1px solid ${U.rule}`,
+                overflow: 'hidden', position: 'relative',
+              }}>
+                <img src={f.photo} alt={f.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+                  onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }} />
+                <div style={{
+                  display: 'none', position: 'absolute', inset: 0,
+                  alignItems: 'center', justifyContent: 'center',
+                  fontFamily: Ufonts.display, fontSize: 48, fontWeight: 500, color: U.navy, opacity: 0.2,
+                }}>{f.initials}</div>
+              </div>
+              <div style={{ fontFamily: Ufonts.mono, fontSize: 9, letterSpacing: '0.22em', textTransform: 'uppercase', color: U.goldDeep, marginBottom: 6 }}>
+                {f.language}
+              </div>
+              <h4 style={{ fontFamily: Ufonts.display, fontSize: 20, fontWeight: 500, color: U.navy, margin: '0 0 8px' }}>
+                {f.name}
+              </h4>
+              <p style={{ fontFamily: Ufonts.serif, fontSize: 13, lineHeight: 1.55, color: U.inkSoft, margin: 0 }}>
+                {f.bio}
+              </p>
+            </article>
+          </FadeIn>
+        ))}
       </div>
     </section>
   );
@@ -774,6 +825,7 @@ export default function ConatusHome() {
         <TrustBar />
         <FourProgrammes />
         <FlagshipFeature />
+        <Faculty />
         <Method />
         <Testimonial />
         <ReimburseBanner />

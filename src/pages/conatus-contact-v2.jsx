@@ -475,7 +475,7 @@ function FAQ() {
             },
             {
               q: 'Where are you based?',
-              a: 'Our registered office is in Krakow, Poland. Programmes are delivered online with live instruction, so participants can join from anywhere. Our language programmes are delivered in partnership with Highline, and our technical and leadership courses with Altkom Akademia.',
+              a: 'Our registered office is in Krakow, Poland. Programmes are delivered online with live instruction, so participants can join from anywhere. Our programmes are delivered in partnership with established, accredited training institutions.',
             },
           ].map((row, i) => (
             <details key={i} style={{ borderBottom: `1px solid ${U.rule}`, padding: '20px 0' }}>

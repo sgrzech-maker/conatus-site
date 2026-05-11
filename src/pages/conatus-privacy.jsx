@@ -190,7 +190,7 @@ function PolicyContent() {
             We do not sell, rent, or trade your personal data. We may share your data only with:
           </p>
           <p style={pStyle}>
-            <strong style={{ color: U.navy }}>Training partners</strong> (Highline, Altkom) - only the information necessary to deliver the programme you have enrolled in, such as your name, contact details, and learning objectives. Our partners process this data solely for the purpose of instruction delivery.
+            <strong style={{ color: U.navy }}>Training partners</strong> (our accredited training partners) - only the information necessary to deliver the programme you have enrolled in, such as your name, contact details, and learning objectives. Our partners process this data solely for the purpose of instruction delivery.
           </p>
           <p style={pStyle}>
             <strong style={{ color: U.navy }}>Service providers</strong> - hosting, email, and payment processing services that act as data processors on our behalf under appropriate data processing agreements.

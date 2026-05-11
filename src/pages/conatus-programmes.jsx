@@ -274,7 +274,7 @@ const programmes = [
     title: 'Business Language for Sales Professionals',
     status: 'Now Enrolling',
     statusColor: U.gold,
-    partner: 'Highline',
+    partner: 'Accredited Partner',
     price: '4,995',
     currency: 'EUR',
     duration: '12 weeks',

@@ -378,7 +378,7 @@ function Partners() {
     {
       name: 'Highline',
       type: 'Language Training Partner',
-      desc: 'Specialist provider of business language programmes for corporate professionals. Highline delivers structured, instructor-led courses with CEFR certification - the European standard for language proficiency recognised by employers across the continent. Their trainers are qualified professionals employed by the institution, not freelancers.',
+      desc: 'Specialist provider of business language programmes for corporate professionals. They deliver structured, instructor-led courses with CEFR certification - the European standard for language proficiency recognised by employers across the continent. Their trainers are qualified professionals employed by the institution, not freelancers.',
       programmes: 'Business Language for Sales Professionals (CONA-101)',
       credentials: [
         'CEFR-certified assessment and outcomes',
