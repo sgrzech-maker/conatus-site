@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 46" fill="none">
+  <path d="M20 2 L37 7 L37 26 Q37 36 20 44 Q3 36 3 26 L3 7 Z"
+        stroke="#C8A24A" stroke-width="1.2" fill="#0E2240" stroke-linejoin="miter" />
+  <text x="20" y="25" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-weight="600"
+        fill="#C8A24A" text-anchor="middle" letter-spacing="0">CA</text>
+  <line x1="10" y1="29" x2="30" y2="29" stroke="#C8A24A" stroke-width="0.6" />
+  <text x="20" y="36" font-family="Cormorant Garamond, Georgia, serif" font-size="4" fill="#C8A24A" text-anchor="middle" letter-spacing="1.5">ACADEMIA</text>
+</svg>
