@@ -322,7 +322,7 @@ function FourProgrammes() {
       code: 'CONA-201',
       title: 'Applied Artificial Intelligence for Sales',
       desc: 'Practical AI tools for prospecting, CRM intelligence, and workflow automation. Hands-on training updated quarterly with the latest enterprise platforms.',
-      partner: 'Altkom',
+      partner: 'Accredited Partner',
       status: 'Forthcoming',
       statusColor: U.inkMute,
     },
@@ -330,7 +330,7 @@ function FourProgrammes() {
       code: 'CONA-301',
       title: 'Sales Leadership Programme',
       desc: 'For current and aspiring sales managers. Leadership foundations, delegation, motivation, strategic thinking - with industry-recognised certification on completion.',
-      partner: 'Altkom',
+      partner: 'Accredited Partner',
       status: 'Forthcoming',
       statusColor: U.inkMute,
     },
@@ -338,7 +338,7 @@ function FourProgrammes() {
       code: 'CONA-401',
       title: 'Digital Marketing for Sales Professionals',
       desc: 'Google Analytics, LinkedIn Ads strategy, and campaign optimisation. Data-driven selling for professionals who want to understand their pipeline from source to close.',
-      partner: 'Altkom',
+      partner: 'Accredited Partner',
       status: 'Forthcoming',
       statusColor: U.inkMute,
     },
@@ -822,7 +822,7 @@ export default function ConatusHome() {
         <UtilityBar />
         <Masthead />
         <Hero />
-        <TrustBar />
+        {/* <TrustBar /> */}
         <FourProgrammes />
         <FlagshipFeature />
         <Method />

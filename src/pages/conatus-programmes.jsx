@@ -297,7 +297,7 @@ const programmes = [
     title: 'Applied Artificial Intelligence for Sales',
     status: 'Forthcoming',
     statusColor: U.inkMute,
-    partner: 'Altkom',
+    partner: 'Accredited Partner',
     price: null,
     duration: 'TBC',
     hours: 'TBC',
@@ -317,7 +317,7 @@ const programmes = [
     title: 'Sales Leadership Programme',
     status: 'Forthcoming',
     statusColor: U.inkMute,
-    partner: 'Altkom',
+    partner: 'Accredited Partner',
     price: null,
     duration: 'TBC',
     hours: 'TBC',
@@ -337,7 +337,7 @@ const programmes = [
     title: 'Digital Marketing for Sales Professionals',
     status: 'Forthcoming',
     statusColor: U.inkMute,
-    partner: 'Altkom',
+    partner: 'Accredited Partner',
     price: null,
     duration: 'TBC',
     hours: 'TBC',
@@ -474,7 +474,7 @@ function ForthcomingProgrammes() {
       <SectionHead
         kicker="In Development"
         title="Forthcoming Programmes"
-        sub="Three additional programmes are being developed with our partner Altkom. Register your interest to be notified when enrolment opens."
+        sub="Three additional programmes are in development with our accredited training partners. Register your interest to be notified when enrolment opens."
       />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 0 }}>

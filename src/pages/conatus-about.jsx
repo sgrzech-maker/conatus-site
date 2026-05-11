@@ -707,7 +707,7 @@ export default function ConatusAbout() {
         <Hero />
         <Origin />
         {/* <Founders /> */}
-        <Partners />
+        {/* <Partners /> */}
         <Principles />
         <Institutional />
         <CTA />
