@@ -238,12 +238,12 @@ function FAQ() {
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         {faqs.map((f, i) => (
           <FadeIn key={i} delay={i * 0.05}>
-            <details style={{ borderBottom: `1px solid ${U.rule}`, padding: '20px 0' }}>
-              <summary style={{ fontFamily: Ufonts.display, fontSize: 20, fontWeight: 500, color: U.navy, cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', listStyle: 'none' }}>
+            <details className="m-faq-item" style={{ borderBottom: `1px solid ${U.rule}`, padding: '20px 0' }}>
+              <summary className="m-faq-summary" style={{ fontFamily: Ufonts.display, fontSize: 20, fontWeight: 500, color: U.navy, cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', listStyle: 'none' }}>
                 {f.q}
-                <span style={{ fontFamily: Ufonts.sans, fontSize: 18, color: U.gold, flexShrink: 0, marginLeft: 16 }}>+</span>
+                <span className="m-faq-plus" style={{ fontFamily: Ufonts.sans, fontSize: 18, color: U.gold, flexShrink: 0, marginLeft: 16 }}>+</span>
               </summary>
-              <p style={{ fontFamily: Ufonts.serif, fontSize: 16, lineHeight: 1.75, color: U.inkSoft, margin: '14px 0 0', paddingRight: 40 }}>
+              <p className="m-faq-answer-simple" style={{ fontFamily: Ufonts.serif, fontSize: 16, lineHeight: 1.75, color: U.inkSoft, margin: '14px 0 0', paddingRight: 40 }}>
                 {f.a}
               </p>
             </details>

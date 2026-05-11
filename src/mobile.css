@@ -178,4 +178,65 @@
     text-align: center !important;
     display: block !important;
   }
+
+  /* ── FAQ Accordion - smooth animation on mobile ──────────── */
+
+  /* Collapse the 3-column grid to 1fr on summary */
+  .m-faq-summary {
+    grid-template-columns: 1fr auto !important;
+    gap: 8px !important;
+  }
+
+  /* Hide the Q-01 number label on mobile to save space */
+  .m-faq-summary .m-faq-num {
+    display: none !important;
+  }
+
+  /* Collapse the 3-column grid on the answer div */
+  .m-faq-answer {
+    grid-template-columns: 1fr !important;
+    gap: 4px !important;
+    margin-top: 10px !important;
+  }
+
+  /* Hide the A. label on mobile */
+  .m-faq-answer .m-faq-num {
+    display: none !important;
+  }
+
+  /* Smooth open/close animation */
+  .m-faq-item {
+    overflow: hidden !important;
+  }
+
+  /* Rotate the + to x when open */
+  .m-faq-plus {
+    transition: transform 0.25s ease !important;
+  }
+
+  .m-faq-item[open] .m-faq-plus {
+    transform: rotate(45deg) !important;
+  }
+
+  /* Animate the answer content sliding in */
+  .m-faq-answer,
+  .m-faq-answer-simple {
+    animation: faqSlideIn 0.25s ease !important;
+  }
+
+  @keyframes faqSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Reduce padding on answer text for reimbursement FAQ */
+  .m-faq-answer-simple {
+    padding-right: 0 !important;
+  }
 }

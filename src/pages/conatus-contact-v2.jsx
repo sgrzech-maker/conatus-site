@@ -478,21 +478,21 @@ function FAQ() {
               a: 'Our registered office is in Krakow, Poland. Programmes are delivered online with live instruction, so participants can join from anywhere. Our programmes are delivered in partnership with established, accredited training institutions.',
             },
           ].map((row, i) => (
-            <details key={i} style={{ borderBottom: `1px solid ${U.rule}`, padding: '20px 0' }}>
-              <summary style={{
+            <details key={i} className="m-faq-item" style={{ borderBottom: `1px solid ${U.rule}`, padding: '20px 0' }}>
+              <summary className="m-faq-summary" style={{
                 listStyle: 'none', cursor: 'pointer',
                 display: 'grid', gridTemplateColumns: '64px 1fr 28px', gap: 16, alignItems: 'baseline',
               }}>
-                <span style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.22em', color: U.goldDeep }}>
+                <span className="m-faq-num" style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.22em', color: U.goldDeep }}>
                   Q - {String(i + 1).padStart(2, '0')}
                 </span>
                 <span style={{ fontFamily: Ufonts.display, fontSize: 'clamp(17px, 1.8vw, 21px)', fontWeight: 500, lineHeight: 1.3, color: U.navy }}>
                   {row.q}
                 </span>
-                <span style={{ fontFamily: Ufonts.display, fontSize: 22, color: U.gold, textAlign: 'right' }}>+</span>
+                <span className="m-faq-plus" style={{ fontFamily: Ufonts.display, fontSize: 22, color: U.gold, textAlign: 'right' }}>+</span>
               </summary>
-              <div style={{ display: 'grid', gridTemplateColumns: '64px 1fr 28px', gap: 16, marginTop: 12 }}>
-                <span style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.22em', color: U.inkMute }}>A.</span>
+              <div className="m-faq-answer" style={{ display: 'grid', gridTemplateColumns: '64px 1fr 28px', gap: 16, marginTop: 12 }}>
+                <span className="m-faq-num" style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.22em', color: U.inkMute }}>A.</span>
                 <p style={{ fontFamily: Ufonts.serif, fontSize: 15, lineHeight: 1.65, color: U.inkSoft, margin: 0 }}>
                   {row.a}
                 </p>
