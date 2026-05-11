@@ -403,7 +403,6 @@ function MainContent() {
               <div style={{ fontFamily: Ufonts.serif, fontSize: 15, color: U.inkSoft, lineHeight: 1.7 }}>
                 <p style={{ margin: '0 0 4px', fontWeight: 600, color: U.ink }}>Conatus Sales Academy</p>
                 <p style={{ margin: 0 }}>
-                  NINJA sp. z o.o.<br />
                   ul. Zamknieta 10/1.5<br />
                   Krakow 30-554, Poland
                 </p>
@@ -415,7 +414,7 @@ function MainContent() {
               </div>
             </div>
 
-            {/* LinkedIn */}
+            {/* LinkedIn - hidden until profile is created
             <div style={{ border: `1px solid ${U.rule}`, padding: 24 }}>
               <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.22em', textTransform: 'uppercase', color: U.goldDeep, marginBottom: 10 }}>
                 Connect
@@ -432,6 +431,7 @@ function MainContent() {
                 LinkedIn
               </a>
             </div>
+            */}
           </div>
         </FadeIn>
       </div>
@@ -530,7 +530,6 @@ function Footer() {
             An independent school for the structured professional development of enterprise sales professionals.
           </p>
           <p style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: 18 }}>
-            NINJA Sp. z o.o.<br />
             ul. Zamknieta 10/1.5, Krakow 30-554<br />
             NIP 6342934938
           </p>
@@ -552,7 +551,7 @@ function Footer() {
         <div>
           <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: U.gold, marginBottom: 14 }}>Contact</div>
           <a href="mailto:admissions@conatus.academy" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>admissions@conatus.academy</a>
-          <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a>
+          {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
       <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>

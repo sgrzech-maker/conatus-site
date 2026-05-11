@@ -656,7 +656,7 @@ function Testimonial() {
             color: U.ivory, margin: 0,
           }}>
             <span style={{ color: U.gold, fontStyle: 'normal' }}>"</span>
-            I started the programme as a BDR who could barely order coffee in German. Three months later I was running discovery calls and presenting in German with confidence. That fluency opened the door to an Account Executive role I would never have been considered for otherwise.
+            I could already speak German - or so I thought. But every time I tried to use it in a real sales situation, I froze. Twelve weeks of structured training turned my conversational German into something I could actually sell with. The difference was having someone who understood what business fluency really means.
             <span style={{ color: U.gold, fontStyle: 'normal' }}>"</span>
           </blockquote>
           <div style={{ marginTop: 36 }}>
@@ -956,7 +956,6 @@ function Footer() {
             An independent school for the structured professional development of enterprise sales professionals.
           </p>
           <p style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.4)', lineHeight: 1.7, marginTop: 18 }}>
-            NINJA Sp. z o.o.<br />
             ul. Zamknieta 10/1.5, Krakow 30-554<br />
             NIP 6342934938
           </p>
@@ -977,7 +976,7 @@ function Footer() {
         <div>
           <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: U.gold, marginBottom: 14 }}>Contact</div>
           <a href="mailto:admissions@conatus.academy" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.7)', textDecoration: 'none', marginBottom: 10 }}>admissions@conatus.academy</a>
-          <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.7)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a>
+          {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.7)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
       <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>

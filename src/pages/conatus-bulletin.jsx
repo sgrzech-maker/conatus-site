@@ -238,7 +238,7 @@ function FeaturedArticle() {
             fontFamily: Ufonts.display, fontSize: 'clamp(32px, 3.5vw, 48px)', fontWeight: 500,
             lineHeight: 1.1, color: U.navy, margin: '0 0 20px',
           }}>
-            From BDR to Account Executive: How Three Months of German Changed a Career
+            From Conversational to Boardroom: How Three Months of Business German Changed a Career
           </h2>
 
           <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: U.inkMute, marginBottom: 32 }}>
@@ -247,23 +247,23 @@ function FeaturedArticle() {
 
           <div style={{ borderTop: `1px solid ${U.rule}`, paddingTop: 32 }}>
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              Adam Krawiec was a Business Development Representative at a large enterprise technology company in Europe. He was good at his job - consistently hitting quota, building pipeline, running disciplined outreach. But the Account Executive roles he wanted required one thing he did not have: German.
+              Adam Krawiec was a Business Development Representative at a large enterprise technology company in Europe. He was good at his job - consistently hitting quota, building pipeline, running disciplined outreach. He could hold a conversation in German. Ordering dinner, small talk at conferences, casual messages with colleagues in the DACH region - no problem. But the Account Executive roles he wanted required something he did not have: professional business German.
             </p>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              The DACH market - Germany, Austria, Switzerland - is one of the largest enterprise technology markets in Europe. Companies hiring AEs for the region do not just prefer German speakers. They require them. Fluent business German is the difference between a candidate pool of thousands and a shortlist of dozens.
+              The DACH market - Germany, Austria, Switzerland - is one of the largest enterprise technology markets in Europe. Companies hiring AEs for the region do not just want someone who speaks German. They need someone who can negotiate contract terms, handle objections from procurement, and present to a boardroom full of German-speaking executives. Conversational fluency and professional fluency are two entirely different things - and the gap between them is where careers stall.
             </p>
 
             <h3 style={{ fontFamily: Ufonts.display, fontSize: 28, fontWeight: 500, color: U.navy, margin: '36px 0 16px' }}>
-              The Problem with Self-Study
+              The Ceiling of Conversational Fluency
             </h3>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              Adam had tried the standard route. Language apps. Online courses. YouTube videos. The pattern was always the same - strong start, gradual fade, back to zero within weeks. Not because of laziness, but because none of these tools offered what he actually needed: the ability to run a discovery call in German, negotiate contract terms, present to a room of German-speaking executives.
+              Adam could get by in German. He had studied it at school, practised on holidays, picked up phrases from colleagues. But every time he tried to use it in a professional setting - a discovery call, a pricing discussion, a quarterly review - he hit a wall. The vocabulary was wrong. The register was wrong. The confidence disappeared the moment the stakes were real.
             </p>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              Generic language learning teaches you to order coffee. Enterprise sales professionals need to qualify a prospect, handle objections, and close - all in the target language. The gap between those two things is enormous.
+              This is the trap that catches thousands of sales professionals across Europe. They have enough German, French, or Spanish to socialise - but not enough to sell. And no amount of Duolingo or generic conversation classes will close that gap, because the gap is not about grammar. It is about industry vocabulary, professional register, and the confidence to perform under pressure in a second language.
             </p>
 
             <h3 style={{ fontFamily: Ufonts.display, fontSize: 28, fontWeight: 500, color: U.navy, margin: '36px 0 16px' }}>
@@ -271,7 +271,7 @@ function FeaturedArticle() {
             </h3>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              Adam enrolled in a structured business language programme - twelve weeks of individual instruction with a dedicated language trainer. The curriculum was not generic. Every session was built around real enterprise sales scenarios: cold outreach in German, discovery call simulations, executive presentation practice, negotiation role-play.
+              Adam enrolled in a structured business language programme - twelve weeks of individual instruction with a dedicated language instructor. The curriculum was not about learning German from scratch. It was about rebuilding what he already knew into professional, sales-ready fluency. Every session was built around real enterprise scenarios: discovery call simulations, executive presentation practice, negotiation role-play, objection handling in real time.
             </p>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
@@ -283,7 +283,7 @@ function FeaturedArticle() {
             </h3>
 
             <p style={{ fontFamily: Ufonts.serif, fontSize: 18, lineHeight: 1.8, color: U.inkSoft, margin: '0 0 24px' }}>
-              Adam completed the programme with a full CEFR level improvement - documented, certified, verifiable. Within months, he moved into an Account Executive role focused on the DACH market. Not at the same company. A better one.
+              Adam completed the programme with a full CEFR level improvement - from conversational B1 to professional B2 - documented, certified, verifiable. He could now run a discovery call, present a proposal, and handle pricing objections entirely in German. Within months, he moved into an Account Executive role focused on the DACH market. Not at the same company. A better one.
             </p>
 
             <div style={{
@@ -294,7 +294,7 @@ function FeaturedArticle() {
                 fontFamily: Ufonts.display, fontSize: 24, fontWeight: 500,
                 fontStyle: 'italic', lineHeight: 1.4, color: U.navy, margin: '0 0 12px',
               }}>
-                "I spent two years thinking about learning German. It took twelve weeks of actual structured training to make it happen. The difference was having someone who knew exactly what I needed for sales, not just grammar."
+                "I could already speak German - or so I thought. But every time I tried to use it in a real sales situation, I froze. Twelve weeks of structured training turned my conversational German into something I could actually sell with. The difference was having someone who understood what business fluency really means."
               </p>
               <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: U.goldDeep }}>
                 Adam Krawiec - Account Executive, DACH Market
@@ -442,7 +442,6 @@ function Footer() {
             From Spinoza's conatus - the innate drive to persist and excel. An independent school for the professional development of enterprise sales teams.
           </p>
           <p style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: 18 }}>
-            NINJA Sp. z o.o.<br />
             ul. Zamknieta 10/1.5, Krakow 30-554<br />
             NIP 6342934938
           </p>
@@ -464,7 +463,7 @@ function Footer() {
         <div>
           <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: U.gold, marginBottom: 14 }}>Contact</div>
           <a href="mailto:admissions@conatus.academy" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>admissions@conatus.academy</a>
-          <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a>
+          {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
       <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>

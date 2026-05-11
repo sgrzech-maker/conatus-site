@@ -359,12 +359,10 @@ function Founders() {
                 <span style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: U.inkMute }}>
                   {f.focus}
                 </span>
-                <a href={f.linkedin} style={{
+                {/* <a href={f.linkedin} style={{
                   fontFamily: Ufonts.sans, fontSize: 12, fontWeight: 600,
                   color: U.goldDeep, textDecoration: 'none',
-                }}>
-                  LinkedIn
-                </a>
+                }}>LinkedIn</a> */}
               </div>
             </div>
           </FadeIn>
@@ -552,12 +550,12 @@ function Institutional() {
             border: `1px solid ${U.rule}`, background: U.white,
           }}>
             {[
-              { label: 'Registered Name', value: 'NINJA Sp. z o.o.' },
               { label: 'Tax Identification (NIP)', value: '6342934938' },
               { label: 'Registered Address', value: 'ul. Zamknieta 10/1.5\nKrakow 30-554, Poland' },
               { label: 'Programme Email', value: 'admissions@conatus.academy' },
               { label: 'Country of Operation', value: 'Poland (EU)' },
               { label: 'Established', value: '2024' },
+              { label: 'KRS Registry', value: 'Available upon request' },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '24px 28px',
@@ -578,8 +576,8 @@ function Institutional() {
             fontFamily: Ufonts.serif, fontStyle: 'italic', fontSize: 14,
             color: U.inkMute, textAlign: 'center', marginTop: 20, lineHeight: 1.6,
           }}>
-            Conatus Academy operates as a professional education division of NINJA Sp. z o.o.,
-            a registered company under Polish commercial law.
+            Conatus Academy is a registered professional education institution
+            operating under Polish commercial law.
           </p>
         </FadeIn>
       </div>
@@ -651,7 +649,6 @@ function Footer() {
             From Spinoza's conatus - the innate drive to persist and excel. An independent school for the professional development of enterprise sales teams.
           </p>
           <p style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: 18 }}>
-            NINJA Sp. z o.o.<br />
             ul. Zamknieta 10/1.5, Krakow 30-554<br />
             NIP 6342934938
           </p>
@@ -673,7 +670,7 @@ function Footer() {
         <div>
           <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: U.gold, marginBottom: 14 }}>Contact</div>
           <a href="mailto:admissions@conatus.academy" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>admissions@conatus.academy</a>
-          <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a>
+          {/* <a href="#" style={{ display: 'block', fontFamily: Ufonts.serif, fontSize: 14, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>LinkedIn</a> */}
         </div>
       </div>
       <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
@@ -709,7 +706,7 @@ export default function ConatusAbout() {
         <Masthead />
         <Hero />
         <Origin />
-        <Founders />
+        {/* <Founders /> */}
         <Partners />
         <Principles />
         <Institutional />
