@@ -302,15 +302,15 @@ function Founders() {
   const founders = [
     {
       name: 'Stanislaw Grzech',
-      role: 'Co-Founder',
+      role: 'CEO',
       bio: 'Sales professional and entrepreneur with international experience across Poland, Denmark, and Ireland. Co-founder of Call\'n\'Grow, a sales consulting firm working with enterprise clients. Built Conatus Academy from the conviction that structured, instructor-led training produces results that self-paced platforms never will.',
       focus: 'Strategy, Admissions, Programme Design',
       linkedin: '#',
     },
     {
       name: 'Maciej Kasprzycki',
-      role: 'Co-Founder and CEO',
-      bio: 'CEO of Call\'n\'Grow and experienced operator in the enterprise technology ecosystem. Brings deep knowledge of corporate training procurement, partner management, and institutional operations. Responsible for Conatus Academy\'s partnerships, compliance, and business operations.',
+      role: 'Co-Founder',
+      bio: 'Co-founder of Call\'n\'Grow and experienced operator in the enterprise technology ecosystem. Brings deep knowledge of corporate training procurement, partner management, and institutional operations. Responsible for Conatus Academy\'s partnerships, compliance, and business operations.',
       focus: 'Operations, Partnerships, Compliance',
       linkedin: '#',
     },

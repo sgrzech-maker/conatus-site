@@ -748,7 +748,7 @@ export default function ConatusAssessment() {
               <div style={{ marginTop: 28 }}>
                 <div style={{ width: 32, height: 1, background: U.gold, margin: '0 auto 12px' }} />
                 <div style={{ fontFamily: Ufonts.display, fontSize: 17, fontWeight: 600, color: U.ivory }}>Stanislaw Grzech</div>
-                <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(200,162,74,0.85)', marginTop: 6 }}>Co-Founder - Conatus Academy</div>
+                <div style={{ fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(200,162,74,0.85)', marginTop: 6 }}>CEO - Conatus Academy</div>
               </div>
             </FadeIn>
           </div>
