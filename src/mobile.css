@@ -179,6 +179,25 @@
     display: block !important;
   }
 
+  /* ── Assessment page - crest + pillars ────────────────────── */
+
+  /* Shrink the spinning crest on mobile */
+  .m-crest-wrap svg {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  /* Four pillars: 2x2 grid on mobile */
+  .m-pillars-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+
+  .m-pillars-grid article {
+    border-right: none !important;
+    padding: 0 12px !important;
+  }
+
   /* ── FAQ Accordion - smooth animation on mobile ──────────── */
 
   /* Collapse the 3-column grid to 1fr on summary */

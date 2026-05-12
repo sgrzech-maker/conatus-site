@@ -589,7 +589,7 @@ export default function ConatusAssessment() {
 
             {/* Animated crest */}
             <FadeIn delay={0.2}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+              <div className="m-crest-wrap" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <CrestSpinning size={420} />
               </div>
             </FadeIn>
@@ -608,7 +608,7 @@ export default function ConatusAssessment() {
               What the assessment will produce.
             </h2>
           </div>
-          <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 0 }}>
+          <div className="m-pillars-grid" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 0 }}>
             {[
               { n: 'I', t: 'Skill Gap Diagnostic', b: 'A structured review of your present capabilities against the demands of your role and territory.' },
               { n: 'II', t: 'Language Placement', b: 'A short oral evaluation in your weakest target language, mapped to CEFR (A1-C1).' },
