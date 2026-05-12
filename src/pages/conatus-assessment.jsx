@@ -114,11 +114,11 @@ function CrestSpinning({ size = 240 }) {
         </text>
       </g>
 
-      {/* counter-rotating inner orbit with the four assessment pillars */}
+      {/* counter-rotating inner orbit with the three assessment pillars */}
       <g style={{ transformOrigin: '120px 120px', animation: 'crest-rotate-reverse 80s linear infinite' }}>
         <circle cx="120" cy="120" r="86" stroke={U.gold} strokeWidth="0.4" fill="none" opacity="0.3" strokeDasharray="2 4" />
-        {['I', 'II', 'III', 'IV'].map((n, i) => {
-          const a = (i / 4) * Math.PI * 2 - Math.PI / 2;
+        {['I', 'II', 'III'].map((n, i) => {
+          const a = (i / 3) * Math.PI * 2 - Math.PI / 2;
           const x = 120 + Math.cos(a) * 86;
           const y = 120 + Math.sin(a) * 86;
           return (
@@ -288,7 +288,7 @@ function Footer() {
 function AssessmentForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState({
-    role: '', goal: '', languages: [], level: '',
+    role: '', goal: '', programme: '',
     name: '', email: '', company: '', timeslot: '', consent: false,
   });
   const total = 4;
@@ -304,8 +304,7 @@ function AssessmentForm() {
         body: JSON.stringify({
           role: data.role,
           goal: data.goal,
-          languages: data.languages.join(', '),
-          level: data.level,
+          programme: data.programme,
           name: data.name,
           email: data.email,
           company: data.company,
@@ -325,10 +324,6 @@ function AssessmentForm() {
   };
   const back = () => setStep(s => Math.max(s - 1, 0));
   const setKV = (k, v) => setData(d => ({ ...d, [k]: v }));
-  const toggleArr = (k, v) => setData(d => ({
-    ...d, [k]: d[k].includes(v) ? d[k].filter(x => x !== v) : [...d[k], v],
-  }));
-
   const labelStyle = {
     fontFamily: Ufonts.mono, fontSize: 10, letterSpacing: '0.22em', textTransform: 'uppercase',
     color: U.goldDeep, marginBottom: 12, display: 'block',
@@ -382,25 +377,22 @@ function AssessmentForm() {
         ))}
       </div>
     </div>,
-    // 2 - Languages + level
+    // 2 - Programme interest
     <div key="2">
-      <label style={labelStyle}>Question III - Working Languages</label>
+      <label style={labelStyle}>Question III - Programme Interest</label>
       <h3 style={{ fontFamily: Ufonts.display, fontSize: 32, fontWeight: 500, lineHeight: 1.15, color: U.navy, margin: '0 0 24px', letterSpacing: '-0.01em' }}>
-        Which languages are part of your sales territory?
+        Which programme area interests you most?
       </h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-        {['English', 'German', 'French', 'Polish', 'Spanish', 'Italian', 'Dutch'].map(o => (
-          <button key={o} type="button" onClick={() => toggleArr('languages', o)}
-            style={data.languages.includes(o) ? chipOn : chipBase}>
-            {o}
-          </button>
-        ))}
-      </div>
-      <label style={labelStyle}>Self-assessed proficiency in your weakest target language</label>
-      <div style={{ display: 'flex', gap: 8 }}>
-        {['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper intermediate', 'C1+ - Advanced'].map(o => (
-          <button key={o} type="button" onClick={() => setKV('level', o)}
-            style={{ ...(data.level === o ? chipOn : chipBase), flex: 1, fontSize: 13, padding: '10px 12px', textAlign: 'center' }}>
+      <div style={{ display: 'grid', gap: 10 }}>
+        {[
+          'Business Language for Sales Professionals (French, German, Spanish, Italian)',
+          'Applied AI for Sales Professionals',
+          'Sales Leadership Programme',
+          'Digital Marketing for Sales Professionals',
+          'Not sure yet - I would like guidance from the Faculty',
+        ].map(o => (
+          <button key={o} type="button" onClick={() => setKV('programme', o)}
+            style={data.programme === o ? chipOn : chipBase}>
             {o}
           </button>
         ))}
@@ -601,7 +593,7 @@ export default function ConatusAssessment() {
           <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
               <span style={{ width: 28, height: 1, background: U.goldDeep }} />
-              <span style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.28em', textTransform: 'uppercase', color: U.goldDeep, whiteSpace: 'nowrap' }}>The Four Instruments</span>
+              <span style={{ fontFamily: Ufonts.mono, fontSize: 11, letterSpacing: '0.28em', textTransform: 'uppercase', color: U.goldDeep, whiteSpace: 'nowrap' }}>The Three Instruments</span>
               <span style={{ width: 28, height: 1, background: U.goldDeep }} />
             </div>
             <h2 style={{ fontFamily: Ufonts.display, fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 500, lineHeight: 1.05, letterSpacing: '-0.012em', margin: 0, color: U.navy }}>
@@ -611,14 +603,13 @@ export default function ConatusAssessment() {
           <div className="m-pillars-grid" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 0 }}>
             {[
               { n: 'I', t: 'Skill Gap Diagnostic', b: 'A structured review of your present capabilities against the demands of your role and territory.' },
-              { n: 'II', t: 'Language Placement', b: 'A short oral evaluation in your weakest target language, mapped to CEFR (A1-C1).' },
+              { n: 'II', t: 'Competency Mapping', b: 'An honest evaluation of your current skill set against the requirements of your target role and market.' },
               { n: 'III', t: 'Programme Recommendation', b: 'A faculty-prepared written plan, naming the specific courses, sequence and cohort dates.' },
-              { n: 'IV', t: 'Reimbursement Brief', b: 'Practical guidance on how to claim from your employer\'s education benefit, with template documents.' },
             ].map((p, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <article style={{
                   padding: '0 32px', textAlign: 'center',
-                  borderRight: i < 3 ? `1px solid ${U.rule}` : 'none',
+                  borderRight: i < 2 ? `1px solid ${U.rule}` : 'none',
                 }}>
                   <div style={{
                     width: 56, height: 56, margin: '0 auto 22px',
@@ -651,7 +642,7 @@ export default function ConatusAssessment() {
                 {[
                   ['I', 'Your role'],
                   ['II', 'Your objective'],
-                  ['III', 'Working languages'],
+                  ['III', 'Programme interest'],
                   ['IV', 'Office of admissions'],
                 ].map(([n, t], i, arr) => (
                   <div key={n} style={{

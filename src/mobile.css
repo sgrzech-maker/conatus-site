@@ -187,9 +187,9 @@
     height: 220px !important;
   }
 
-  /* Four pillars: 2x2 grid on mobile */
+  /* Pillars: stack on mobile */
   .m-pillars-grid {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr !important;
     gap: 24px !important;
   }
 
