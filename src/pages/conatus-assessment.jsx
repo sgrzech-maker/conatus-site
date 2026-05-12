@@ -727,7 +727,7 @@ export default function ConatusAssessment() {
           </div>
         </section>
 
-        {/* ── CLOSING WORD ── */}
+        {/* CLOSING WORD - hidden for now
         <section style={{ padding: 'clamp(72px, 7vw, 96px) 5%', background: U.navy, color: U.ivory, position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', inset: 'clamp(16px, 2vw, 28px)', border: '1px solid rgba(200,162,74,0.18)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', inset: 'clamp(20px, 2.2vw, 32px)', border: '1px solid rgba(200,162,74,0.08)', pointerEvents: 'none' }} />
@@ -753,6 +753,7 @@ export default function ConatusAssessment() {
             </FadeIn>
           </div>
         </section>
+        */}
 
         <Footer />
       </div>
